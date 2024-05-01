@@ -6,8 +6,8 @@
 <title>Cods Hub</title>
 <style>
   body {
-    background-color: #000; /* Dark background */
-    color: #fff; /* Light text */
+    background-color: #000; 
+    color: #fff; 
     font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
@@ -23,16 +23,15 @@
   </div>
 
 <script>
-  // Array to store different text variations for website title and construction title
   var websiteTitleText = ["Cods Hub.", "Cods Hub..", "Cods Hub..."];
   var constructionTitleText = ["Under construction.", "Under construction..", "Under construction..."];
   var index = 0; // Index to track current text
 
   // Function to update titles
   function updateTitles() {
-    document.title = websiteTitleText[index]; // Update website title
-    document.getElementById("constructionTitle").textContent = constructionTitleText[index]; // Update construction title
-    index = (index + 1) % websiteTitleText.length; // Increment index and loop back to 0 if out of bounds
+    document.title = websiteTitleText[index]; 
+    document.getElementById("constructionTitle").textContent = constructionTitleText[index]; 
+    index = (index + 1) % websiteTitleText.length;
   }
 
   // Update titles every second
